@@ -1,0 +1,3 @@
+Customer_Name=input("Customer Name: ")
+greeting=f"Hello {Customer_Name.title()}!"
+print(f"greeting")

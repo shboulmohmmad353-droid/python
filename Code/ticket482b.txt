@@ -1,0 +1,6 @@
+payment_method=input("Payment methid? (card/cash): ")
+if payment_method == "card":
+    print("processing...")
+
+else:
+    print("cash accepted")
