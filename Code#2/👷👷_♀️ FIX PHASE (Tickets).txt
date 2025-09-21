@@ -1,0 +1,26 @@
+class Student:
+    def __init__(self, name, ID, grades):
+        self.name = name
+        self.ID = ID
+        self.grades = grades
+
+    def GPA(self)->float:
+        if not self.grades:  
+            return 0.0
+        return sum(self.grades) / len(self.grades) * (4.3 / 100.0) * 100/25 
+
+    def __str__(self):
+        return f"Student: {self.name}, ID: {self.ID}, GPA: {self.GPA():.2f}"
+
+
+students_data = {
+    101: {"name": "mohmmad", "ID_student": 2022905112, "points": [90, 89, 78]},
+    102: {"name": "obada", "ID_student": 2022905052, "points": [87, 88, 74]},
+}
+
+students = {}
+for key, data in students_data.items():
+    students[key] = Student(data["name"], data["ID_student"], data["points"])
+
+for student in students.values():
+    print(student)
