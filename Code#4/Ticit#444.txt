@@ -1,0 +1,32 @@
+import tkinter as tk
+import requests
+def get_weather():
+    
+    city = entry.get()
+    data =requests.get(f"https://example.com/weather/{city}").text
+    label.config(text=data)
+
+   
+root = tk.Tk()
+entry = tk.Entry(root); entry.pack()
+button = tk.Button(root, text="Get Weather",
+command=get_weather); button.pack()
+label = tk.Label(root, text=""); label.pack()
+root.mainloop()
+
+from flask import Flask, request
+app = Flask(__name__)
+@app.route("/weather")
+def weather():
+    city = request.args["city"]
+    return f"Sunny in {city}"
+
+@app.route("/weather")
+def weather():
+    city = request.args.get("city", "")
+    return f"Sunny in {city}"
+
+API_KEY = "abc123SECRET"
+def get_data(city):
+    return
+    requests.get(f"https://api.example.com/{city}?key={API_KEY}").json()
