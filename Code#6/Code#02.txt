@@ -1,0 +1,8 @@
+import pandas as pd
+data={
+    "Name":["Mohmmad","Ali","Mahmmoud"],
+    "Age":[22,34,43],
+    "Salary":[3000,2500,3900]
+}
+df=pd.DataFrame(data,index=["A1","B2","C3"])
+df

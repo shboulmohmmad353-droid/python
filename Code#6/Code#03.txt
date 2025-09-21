@@ -1,0 +1,16 @@
+import matplotlib.pyplot as plt
+
+data={"Name":["Mohmmad","Ali","Gadah","Mahmmoud","Hasan","Salwa","Mohsan","Leen"],
+      "Salary":[3000,2500,3900,560,234,765,432,567],
+      "Hours":[250,290,265,100,40,90,156,132],
+      "Gender":["M","M","F","M","M","F","M","F"]
+     }
+
+name=data["Name"]
+salary=data["Salary"]
+plt.plot(name, salary ,color="r",linewidth=10)
+plt.xlabel("Name")
+plt.ylabel("Salary")
+plt.show()
+
+
