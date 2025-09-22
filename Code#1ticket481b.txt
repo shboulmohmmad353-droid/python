@@ -1,0 +1,2 @@
+Name=input("Name?")
+print(f"Hello {name.title()}")
