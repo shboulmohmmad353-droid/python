@@ -1,0 +1,9 @@
+from tkinter import *
+root=Tk()
+X=42
+w=Button(text='hi', command=(lambda: handler(X, 'spam')))
+l=Label(None,text="Hello")
+w.pack()
+root.title("python.py")
+
+w.mainloop()

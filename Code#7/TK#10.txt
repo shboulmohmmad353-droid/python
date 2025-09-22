@@ -1,0 +1,6 @@
+from tkinter import *
+
+options = {'text': 'Hello GUI world!'}
+layout = {'side': 'top'}
+Label(None, **options).pack(**layout)
+mainloop()

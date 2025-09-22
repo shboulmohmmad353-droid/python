@@ -1,0 +1,6 @@
+from tkinter import *
+root=Tk()
+w=Button(root,text="press", command=root.quit)
+w.pack()
+root.title("Python.py")
+root.mainloop()

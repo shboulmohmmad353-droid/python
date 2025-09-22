@@ -1,0 +1,7 @@
+from tkinter import Tk
+from tkinter import Label
+tk=Tk()
+tk.mainloop()
+wind=Label(None,text="Hello world")
+wind.pack()
+wind.mainloop()

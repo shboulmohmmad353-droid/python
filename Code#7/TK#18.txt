@@ -1,0 +1,13 @@
+from tkinter import *
+import sys
+class HelloClass:
+    def __init__ (self):
+        root=Tk()
+        w=Button(None,text="Hi World" , command=self.quit)
+        w.pack()
+        root.title("Mohmmad")
+    def quit(self):
+        print("Hello class method world!")
+        sys.exit()
+HelloClass()
+mainloop()

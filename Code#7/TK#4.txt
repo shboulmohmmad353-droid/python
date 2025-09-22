@@ -1,0 +1,4 @@
+from tkinter import *
+root=Tk()
+Label(None, text="Hello World").pack(side=TOP)
+root.mainloop()

@@ -1,0 +1,3 @@
+from tkinter import Tk 
+tk=Tk()
+tk.mainloop()
