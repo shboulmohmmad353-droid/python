@@ -1,0 +1,11 @@
+import matplotlib.pyplot as plt
+
+Name=["mohmmad","ali","kalid","mahmmoud","sarah","hala","hasan"]
+Age=[10,25,20,15,30,50,45]
+
+mycolors=['g','y','b','r','k','y','b']
+plt.bar(Name,Age, color=mycolors ,width=-0.5 , edgecolor="hotpink",lw=2 ,align="center")
+plt.title("Barchart in matplotlib", fontsize=15)
+plt.xlabel("Name",fontsize=10)
+plt.ylabel("Age",fontsize=10)
+plt.show()

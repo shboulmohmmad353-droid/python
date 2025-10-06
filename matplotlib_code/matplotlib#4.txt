@@ -1,0 +1,13 @@
+#line chart in matplotlib in python 
+import matplotlib.pyplot as plt
+
+Number=[10,15,30,50,60,70,90,99]
+Value=[11,21,31,41,51,61,81,101]
+
+plt.plot(Number,color="r",marker="p",linestyle=":",linewidth=3)
+plt.plot(Value,"gs-.",lw=3)
+plt.title("Line chart in matplotlib",fontsize=20)
+plt.legend(["Number","Value"],loc="lower right")
+plt.xlabel("Number",fontsize=10)
+plt.ylabel("Value",fontsize=10)
+plt.show()
